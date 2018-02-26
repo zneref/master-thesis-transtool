@@ -1,0 +1,664 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TransTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TransTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRANSTOOL_DIALOG DIALOGEX 50, 50, 383, 295
+STYLE DS_ABSALIGN | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TransTool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "w³¹cz / wy³¹cz",ID_VISUAL_WND,15,258,62,14,BS_FLAT
+    PUSHBUTTON      "Koniec",IDCANCEL,314,258,62,14,BS_FLAT
+    PUSHBUTTON      "OX",IDC_TURN_OX,83,258,22,14,BS_FLAT
+    PUSHBUTTON      "OY",IDC_TURN_OY,109,258,22,14,BS_FLAT
+    PUSHBUTTON      "OZ",IDC_TURN_OZ,135,258,22,14,BS_FLAT
+    PUSHBUTTON      "OO",IDC_TURN_OO,161,258,22,14,BS_FLAT
+    GROUPBOX        "Wizualizacja komórki elementarnej",IDC_STATIC,7,242,296,
+                    46,BS_FLAT
+END
+
+IDD_TRANSMAT_DLG DIALOG DISCARDABLE  0, 0, 366, 218
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Macierz przejœcia"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "WskaŸniki Millera",IDC_STATIC,151,7,208,190,BS_FLAT
+    LTEXT           "Kliknij  na dwóch  œcianach próbki i podaj ich wskaŸniki Millera.",
+                    IDC_STATIC,158,21,198,10
+    PUSHBUTTON      "Resetuj",IDC_RESETDATA,215,178,84,14,BS_FLAT
+    DEFPUSHBUTTON   "Wyznacz macierz przejœcia",IDC_FIND_MATRIX,135,200,95,
+                    14,BS_FLAT
+    COMBOBOX        IDC_CLASS_LIST,89,22,53,69,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Klasa kryszta³u",IDC_STATIC,7,7,140,190,BS_FLAT
+    PUSHBUTTON      "Parametry kom. elem...",IDC_CELL_PARAM,35,178,84,14,
+                    BS_FLAT
+    COMBOBOX        IDC_SYSTEM_LIST,13,22,73,58,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MILLPTR_OX DIALOG DISCARDABLE  0, 0, 201, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WskaŸniki Millera - oœ X"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HOX,25,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KOX,91,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOX,153,25,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,76,50,50,14,BS_FLAT
+    LTEXT           "h = ",IDC_STATIC,7,28,13,8
+    LTEXT           "k = ",IDC_STATIC,73,28,13,8
+    LTEXT           "l = ",IDC_STATIC,139,28,10,8
+    LTEXT           "WprowadŸ wskaŸniki Millera œciany prostopad³ej do X:",
+                    IDC_STATIC,15,7,172,8
+END
+
+IDD_MILLPTR_OY DIALOG DISCARDABLE  0, 0, 203, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WskaŸniki Millera -oœ Y"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HOY,28,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KOY,94,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOY,156,25,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,76,50,50,14,BS_FLAT
+    LTEXT           "h = ",IDC_STATIC,10,30,13,8
+    LTEXT           "k = ",IDC_STATIC,76,30,13,8
+    LTEXT           "l = ",IDC_STATIC,142,30,10,8
+    LTEXT           "WprowadŸ wskaŸniki Millera œciany prostopad³ej do Y:",
+                    IDC_STATIC,15,7,172,8
+END
+
+IDD_MILLPTR_OZ DIALOG DISCARDABLE  0, 0, 201, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "WskaŸniki Millera - oœ Z"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HOZ,25,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_KOZ,91,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LOZ,153,25,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,75,50,50,14,BS_FLAT
+    LTEXT           "h = ",IDC_STATIC,7,29,13,8
+    LTEXT           "k = ",IDC_STATIC,73,29,13,8
+    LTEXT           "l = ",IDC_STATIC,139,29,10,8
+    LTEXT           "WprowadŸ wskaŸniki Millera œciany prostopad³ej do Z:",
+                    IDC_STATIC,15,7,172,8
+END
+
+IDD_TENSOR_DLG DIALOG DISCARDABLE  0, 0, 366, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tensor sprê¿ystoœci"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CC11,12,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC12,34,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC13,55,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC14,77,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC15,99,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC16,121,36,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC22,34,52,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC23,55,52,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC24,77,52,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC25,99,52,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC26,121,52,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC33,55,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC34,77,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC35,99,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC36,121,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC44,77,82,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC45,99,82,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC46,121,82,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC55,99,98,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC56,121,98,22,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CC66,121,112,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M11,154,37,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M12,176,37,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M13,198,37,22,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M21,154,53,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M22,176,53,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M23,198,53,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M31,154,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M32,176,67,22,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_M33,198,67,22,15,ES_AUTOHSCROLL
+    CONTROL         "trójskoœny",IDC_RADIO_TRI,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,157,154,55,10
+    CONTROL         "jednoskoœny",IDC_RADIO_MONO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,157,169,55,10
+    CONTROL         "rombowy",IDC_RADIO_ORTHO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,157,183,55,10
+    CONTROL         "tetragonalny",IDC_RADIO_TETRA,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,157,196,55,10
+    CONTROL         "regularny",IDC_RADIO_CUB,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,226,154,55,10
+    CONTROL         "heksagonalny",IDC_RADIO_HEKSA,"Button",
+                    BS_AUTORADIOBUTTON | WS_TABSTOP,226,169,56,10
+    CONTROL         "trygonalny",IDC_RADIO_TRIG,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,226,183,55,10
+    PUSHBUTTON      "Z pliku....",IDC_FROM_FILE,291,159,58,15,BS_FLAT
+    PUSHBUTTON      "Przekszta³æ",IDC_TRANSF,159,90,58,15,BS_FLAT
+    PUSHBUTTON      "Zapisz",IDC_SAVE,291,183,58,15,BS_FLAT
+    PUSHBUTTON      "Z pliku....",IDC_MAT_FROM_FILE,43,159,58,15,BS_FLAT
+    PUSHBUTTON      "Zapisz",IDC_MAT_SAVE,43,183,58,15,BS_FLAT
+    EDITTEXT        IDC_CL11,227,36,23,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL12,250,36,22,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL13,272,36,21,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL14,293,36,22,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL15,315,36,23,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL16,338,36,21,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL21,227,52,23,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL22,250,52,22,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL23,272,52,21,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL24,293,52,22,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL25,315,52,23,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL26,338,52,21,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL31,227,67,23,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL32,250,67,22,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL33,272,67,21,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL34,293,67,22,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL35,315,67,23,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL36,338,67,21,15,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL41,227,82,23,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL42,250,82,22,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL43,272,82,21,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL44,293,82,22,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL45,315,82,23,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL46,338,82,21,16,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL51,227,98,23,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL52,250,98,22,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL53,272,98,21,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL54,293,98,22,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL55,315,98,23,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL56,338,98,21,14,ES_AUTOHSCROLL | ES_READONLY | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_CL61,227,112,23,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CL62,250,112,22,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CL63,272,112,21,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CL64,293,112,22,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CL65,315,112,23,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CL66,338,112,21,15,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_CC21,12,52,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC31,12,67,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC32,34,67,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC41,12,82,22,16,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC42,34,82,22,16,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC43,55,82,22,16,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC51,12,98,22,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC52,34,98,22,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC53,55,98,22,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC54,77,98,22,14,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC61,12,112,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC62,34,112,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC63,55,112,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC64,77,112,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    EDITTEXT        IDC_CC65,99,112,22,15,ES_AUTOHSCROLL | NOT WS_TABSTOP
+    CTEXT           "Tensor sprê¿ystoœci w uk³adzie\nkrystaograficznym:",
+                    IDC_STATIC,8,10,137,19
+    CTEXT           "Tensor sprê¿ystoœci w uk³adzie\nlabolatoryjnym",
+                    IDC_STATIC,227,10,132,19
+    GROUPBOX        "Tensor sprê¿ystoœci",IDC_STATIC,143,136,215,78,BS_FLAT
+    LTEXT           "Macierz przejœcia",IDC_STATIC,159,10,55,8
+    GROUPBOX        "Macierz przejœcia",IDC_STATIC,11,136,117,78,BS_FLAT
+END
+
+IDD_VIEW_DLG DIALOG DISCARDABLE  400, 100, 225, 167
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Wizualizacja komórki elementarnej"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_RESULT_DLG DIALOG DISCARDABLE  0, 0, 323, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Macierz przejœcia - wyniki"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Zapisz macierz",IDOK,92,93,65,14,BS_FLAT
+    PUSHBUTTON      "Koniec",IDCANCEL,168,93,65,14,BS_FLAT
+    EDITTEXT        IDC_A11,124,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A12,150,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A13,176,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A21,124,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A22,150,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A31,124,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A32,150,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A23,176,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_A33,176,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T11,29,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T12,55,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T13,81,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T21,29,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T22,55,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T31,29,64,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T32,55,64,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T23,81,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_T33,81,64,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E11,229,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E12,255,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E13,281,30,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E21,229,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E22,255,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E31,229,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E32,255,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E23,281,47,22,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E33,281,65,22,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "X",IDC_STATIC,14,33,8,8
+    LTEXT           "Y",IDC_STATIC,14,49,8,8
+    LTEXT           "Z",IDC_STATIC,14,66,8,8
+    GROUPBOX        "Baza uk³adu fizyczno-krystal.",IDC_STATIC,8,16,103,68,
+                    BS_FLAT
+    LTEXT           "x",IDC_STATIC,217,32,8,8
+    LTEXT           "y",IDC_STATIC,217,48,8,8
+    LTEXT           "z",IDC_STATIC,217,65,8,8
+    GROUPBOX        "Baza uk³adu labolatoryjnego",IDC_STATIC,211,16,103,68,
+                    BS_FLAT
+    GROUPBOX        "Macierz przejœcia",IDC_STATIC,115,16,92,68,BS_FLAT
+END
+
+IDD_CELL_PARAM_DLG DIALOG DISCARDABLE  0, 0, 242, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Parametry komórki elementarnej"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_A,63,29,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_B,63,46,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_C,63,64,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALPHA,174,27,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BETA,174,44,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GAMMA,174,62,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,95,95,50,14,BS_FLAT
+    LTEXT           "wzd³u¿ X (a) = ",IDC_STATIC,15,30,48,8
+    LTEXT           "wzd³u¿ Y (b) = ",IDC_STATIC,15,48,48,8
+    LTEXT           "wzd³u¿ Z (c) = ",IDC_STATIC,15,67,48,8
+    GROUPBOX        "Jednostki osiowe (ankstremy)",IDC_STATIC,9,14,105,72,
+                    BS_FLAT
+    LTEXT           "< (Y, Z) = ",IDC_STATIC,135,28,32,8
+    LTEXT           "< (X, Z) = ",IDC_STATIC,135,47,32,8
+    LTEXT           "< (X, Y) =",IDC_STATIC,135,65,30,8
+    GROUPBOX        "K¹ty miêdzy osiami (stopnie)",IDC_STATIC,124,14,105,72,
+                    BS_FLAT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TRANSTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 5
+        HORZGUIDE, 272
+        HORZGUIDE, 278
+    END
+
+    IDD_TRANSMAT_DLG, DIALOG
+    BEGIN
+        HORZGUIDE, 7
+        HORZGUIDE, 34
+        HORZGUIDE, 192
+        HORZGUIDE, 197
+    END
+
+    IDD_MILLPTR_OX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_MILLPTR_OY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 196
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_MILLPTR_OZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_TENSOR_DLG, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_VIEW_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_RESULT_DLG, DIALOG
+    BEGIN
+        VERTGUIDE, 14
+        BOTTOMMARGIN, 107
+        HORZGUIDE, 79
+        HORZGUIDE, 84
+    END
+
+    IDD_CELL_PARAM_DLG, DIALOG
+    BEGIN
+        VERTGUIDE, 135
+        HORZGUIDE, 57
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_4PERMB              BITMAP  DISCARDABLE     "bmp\\tetrag\\4_per_m_B.bmp"
+IDB_4PERMA              BITMAP  DISCARDABLE     "bmp\\tetrag\\4_per_m_A.bmp"
+IDB_4A                  BITMAP  DISCARDABLE     "bmp\\tetrag\\4_A.bmp"
+IDB_4B                  BITMAP  DISCARDABLE     "bmp\\tetrag\\4_B.bmp"
+IDB_4INV2MA             BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_2m_A.bmp"
+IDB_4INV2MB             BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_2m_B.bmp"
+IDB_4INVA               BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_A.bmp"
+IDB_4INVB               BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_B.bmp"
+IDB_4INVC               BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_C.bmp"
+IDB_4INVD               BITMAP  DISCARDABLE     "bmp\\tetrag\\4_inv_D.bmp"
+IDB_4PERMMMA            BITMAP  DISCARDABLE     "bmp\\tetrag\\4_per_mmm_A.bmp"
+IDB_422A                BITMAP  DISCARDABLE     "bmp\\tetrag\\422_A.bmp"
+IDB_4MMA                BITMAP  DISCARDABLE     "bmp\\tetrag\\4mm_A.bmp"
+IDB_4MMB                BITMAP  DISCARDABLE     "bmp\\tetrag\\4mm_B.bmp"
+IDB_MM2A                BITMAP  DISCARDABLE     "bmp\\orthoro\\mm2_A.bmp"
+IDB_222                 BITMAP  DISCARDABLE     "bmp\\orthoro\\222.bmp"
+IDB_MM2B                BITMAP  DISCARDABLE     "bmp\\orthoro\\mm2_B.bmp"
+IDB_MMM                 BITMAP  DISCARDABLE     "bmp\\orthoro\\mmm.bmp"
+IDB_3A                  BITMAP  DISCARDABLE     "bmp\\trigonal\\3_A.bmp"
+IDB_3B                  BITMAP  DISCARDABLE     "bmp\\trigonal\\3_B.bmp"
+IDB_3C                  BITMAP  DISCARDABLE     "bmp\\trigonal\\3_C.bmp"
+IDB_3D                  BITMAP  DISCARDABLE     "bmp\\trigonal\\3_D.bmp"
+IDB_3INVA               BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_A.bmp"
+IDB_3INVB               BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_B.bmp"
+IDB_3INVC               BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_C.bmp"
+IDB_3INVD               BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_D.bmp"
+IDB_3INVMA              BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_m_A.bmp"
+IDB_3INVMB              BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_m_B.bmp"
+IDB_3INVMC              BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_m_C.bmp"
+IDB_3INVMD              BITMAP  DISCARDABLE     "bmp\\trigonal\\3_inv_m_D.bmp"
+IDB_32A                 BITMAP  DISCARDABLE     "bmp\\trigonal\\32_A.bmp"
+IDB_32B                 BITMAP  DISCARDABLE     "bmp\\trigonal\\32_B.bmp"
+IDB_3MA                 BITMAP  DISCARDABLE     "bmp\\trigonal\\3m_A.bmp"
+IDB_3MB                 BITMAP  DISCARDABLE     "bmp\\trigonal\\3m_B.bmp"
+IDB_3MC                 BITMAP  DISCARDABLE     "bmp\\trigonal\\3m_C.bmp"
+IDB_3MD                 BITMAP  DISCARDABLE     "bmp\\trigonal\\3m_D.bmp"
+IDB_2                   BITMAP  DISCARDABLE     "bmp\\monoclin\\2.bmp"
+IDB_2PERM               BITMAP  DISCARDABLE     "bmp\\monoclin\\4_per_m.bmp"
+IDB_MA                  BITMAP  DISCARDABLE     "bmp\\monoclin\\m_A.bmp"
+IDB_MB                  BITMAP  DISCARDABLE     "bmp\\monoclin\\m_B.bmp"
+IDB_1                   BITMAP  DISCARDABLE     "bmp\\triclin\\1.bmp"
+IDB_1INV                BITMAP  DISCARDABLE     "bmp\\triclin\\1_inv.bmp"
+IDB_432                 BITMAP  DISCARDABLE     "bmp\\cubic\\432.bmp"
+IDB_23B                 BITMAP  DISCARDABLE     "bmp\\cubic\\23_B.bmp"
+IDB_4INV3MA             BITMAP  DISCARDABLE     "bmp\\cubic\\4_inv_3m_A.bmp"
+IDB_4INV3MB             BITMAP  DISCARDABLE     "bmp\\cubic\\4_inv_3m_B.bmp"
+IDB_23A                 BITMAP  DISCARDABLE     "bmp\\cubic\\23_A.bmp"
+IDB_M3A                 BITMAP  DISCARDABLE     "bmp\\cubic\\m3_A.bmp"
+IDB_M3B                 BITMAP  DISCARDABLE     "bmp\\cubic\\m3_B.bmp"
+IDB_M3M                 BITMAP  DISCARDABLE     "bmp\\cubic\\m3m.bmp"
+IDB_6A                  BITMAP  DISCARDABLE     "bmp\\hexag\\6_A.bmp"
+IDB_6B                  BITMAP  DISCARDABLE     "bmp\\hexag\\6_B.bmp"
+IDB_6INVA               BITMAP  DISCARDABLE     "bmp\\hexag\\6_inv_A.bmp"
+IDB_6INVM2A             BITMAP  DISCARDABLE     "bmp\\hexag\\6_inv_m2_A.bmp"
+IDB_6INVM2B             BITMAP  DISCARDABLE     "bmp\\hexag\\6_inv_m2_B.bmp"
+IDB_6PERMA              BITMAP  DISCARDABLE     "bmp\\hexag\\6_per_m_A.bmp"
+IDB_6PERMB              BITMAP  DISCARDABLE     "bmp\\hexag\\6_per_m_B.bmp"
+IDB_6PERMMM             BITMAP  DISCARDABLE     "bmp\\hexag\\6_per_mmm.bmp"
+IDB_622                 BITMAP  DISCARDABLE     "bmp\\hexag\\622.bmp"
+IDB_6MMA                BITMAP  DISCARDABLE     "bmp\\hexag\\6mm_A.bmp"
+IDB_6MMB                BITMAP  DISCARDABLE     "bmp\\hexag\\6mm_B.bmp"
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About TransTool"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TransTool Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TransTool MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TransTool\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TransTool.EXE\0"
+            VALUE "ProductName", "TransTool Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About TransTool..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TransTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

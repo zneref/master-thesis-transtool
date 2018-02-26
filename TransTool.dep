@@ -1,0 +1,22 @@
+# Microsoft Developer Studio Generated Dependency File, included by TransTool.mak
+
+.\StdAfx.cpp : \
+	".\StdAfx.h"\
+	
+
+.\TransTool.cpp : \
+	".\StdAfx.h"\
+	".\TransTool.h"\
+	".\TransToolDlg.h"\
+	
+
+.\TransTool.rc : \
+	".\res\TransTool.ico"\
+	".\res\TransTool.rc2"\
+	
+
+.\TransToolDlg.cpp : \
+	".\StdAfx.h"\
+	".\TransTool.h"\
+	".\TransToolDlg.h"\
+	
